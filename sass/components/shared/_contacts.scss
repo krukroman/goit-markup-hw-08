@@ -1,0 +1,31 @@
+.header-contacts__list {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.header-contacts__item {
+  margin: 0 50px 0 0;
+  &:last-child {
+    margin: 0;
+  }
+}
+.header-contacts__link {
+  display: flex;
+  align-items: center;
+  padding: 31px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $second_color;
+  fill: $second_color;
+  transition: color $cubic, fill $cubic;
+  &:hover,
+  &:focus {
+    color: $accent_color;
+    fill: $accent_color;
+  }
+}
+.header-contacts__icon {
+  margin: 0 10px 0 0;
+}

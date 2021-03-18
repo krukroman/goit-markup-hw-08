@@ -1,0 +1,12 @@
+.footer-socials-container {
+    margin: 0 0 0 70px;
+    align-items: center;
+}
+.footer-socials__link {
+    background: rgba(255, 255, 255, 0.1);
+    fill: $white_color;
+    transition: background $cubic;
+    &:hover, &:focus {
+        background-color: $accent_color;
+    }
+}

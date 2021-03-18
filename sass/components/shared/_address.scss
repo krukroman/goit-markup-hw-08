@@ -1,0 +1,17 @@
+.address__item {
+  color: $white_color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.address__item {
+  margin: 0 0 9px 0;
+  &:last-child {
+      margin: 0;
+  }
+}
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+}

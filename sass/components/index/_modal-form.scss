@@ -1,0 +1,124 @@
+.modal-form {
+  margin: 0;
+  padding: 40px;
+}
+.modal-form__title {
+  display: block;
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.modal-form__field {
+  position: relative;
+  display: flex;
+  margin: 0 0 10px 0;
+  flex-direction: column;
+}
+.modal-form__label {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $second_color;
+}
+.modal-form__input {
+  height: 40px;
+  padding: 0 0 0 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color $cubic;
+  .modal-form__field:hover & {
+    border: 1px solid $accent_color;
+  }
+  &:focus {
+    border: 1px solid $accent_color;
+    outline: transparent;
+  }
+}
+.modal-form__icon {
+  position: absolute;
+  display: block;
+  top: 29px;
+  left: 12px;
+  fill: $fisrt_color;
+  transition: fill $cubic;
+  .modal-form__field:hover & {
+    fill: $accent_color;
+  }
+  .modal-form__input:focus ~ & {
+    fill: $accent_color;
+  }
+}
+.modal-form__comment {
+  margin: 0 0 20px 0;
+}
+.modal-form__text-area {
+  display: block;
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color $cubic;
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.agreement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 0 30px 0;
+  padding: 0 12px;
+}
+.agreement__icon {
+  display: block;
+  margin: 0 7px 0 0;
+  padding: 0;
+  background-color: transparent;
+  fill: transparent;
+  border: 2px solid $fisrt_color;
+  border-radius: 2px;
+  transition: fill $cubic, backgroung-color $cubic;
+  .agreement__checkbox:checked + & {
+    background-color: $accent_color;
+    fill: $white_color;
+    border: transparent;
+  }
+}
+.agreement__label {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $second_color;
+}
+.agreement__link {
+  display: inline;
+  color: $accent_color;
+  text-decoration: underline;
+}
+.modal-submit-button {
+  padding: 10px 55px;
+}
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: $white_color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill $cubic;
+  &:hover,
+  &:focus {
+    fill: $accent_color;
+  }
+}

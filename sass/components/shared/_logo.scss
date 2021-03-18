@@ -1,0 +1,12 @@
+.logo {
+    padding: 24px 0;
+    font-family: $secondary_font;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $black_color;
+    &--accented {
+        color: $accent_color;
+    }
+}

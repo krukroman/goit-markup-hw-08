@@ -1,0 +1,30 @@
+@import './utils/variables';
+@import './components/shared/body';
+@import './utils/visually-hidden';
+@import './components/shared/section';
+@import './components/shared/container';
+// Header
+@import './components/shared/page-header';
+@import './components/shared/logo';
+@import './components/shared/navigation';
+@import './components/shared/contacts';
+// Main content index.html
+@import './components/index/hero-section';
+@import './components/index/advantages-section';
+@import './components/index/about-us-section';
+@import './components/index/our-team-section';
+@import './components/index/socials';
+@import './components/index/clients-section';
+// Main content porfolio.html
+@import './components/portfolio/filter';
+@import './components/portfolio/products-set';
+// Footer
+@import './components/shared/page-footer';
+@import './components/shared/footer-logo';
+@import './components/shared/address';
+@import './components/shared/footer-socials';
+@import './components/shared/footer-form';
+// Backdrop
+@import './components/index/backdrop';
+@import './components/index/modal';
+@import './components/index/modal-form';

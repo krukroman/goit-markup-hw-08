@@ -1,0 +1,25 @@
+.clients-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -1 * $grid_margin;
+}
+.clients__item {
+  margin: $grid_margin;
+  width: $container_width / 6 - 2 * $grid_margin;
+}
+.clients__link {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $third_color;
+  border-radius: 4px;
+  fill: $third_color;
+  transition: border-color $cubic, fill $cubic;
+  &:hover,
+  &:focus {
+    fill: $accent_color;
+    border-color: $accent_color;
+  }
+}

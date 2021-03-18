@@ -1,0 +1,32 @@
+.about-us {
+  padding: 47px 0 94px 0;
+}
+.about-us-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -1 * $grid_margin;
+}
+.about-us__item {
+  margin: $grid_margin;
+  max-width: $container_width / 3 - 2 * $grid_margin;
+}
+.about-us__thumb {
+  position: relative;
+}
+.about-us__text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 27px 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white_color;
+  background: rgba(47, 48, 58, 0.8);
+}

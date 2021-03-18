@@ -1,0 +1,9 @@
+.header {  
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $header_border_color;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
