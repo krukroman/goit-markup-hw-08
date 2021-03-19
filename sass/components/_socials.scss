@@ -1,0 +1,19 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -10px;
+}
+.socials__item {
+  margin: 10px;
+}
+.socials__link {
+  padding: 12px;
+  border-radius: 50%;
+  fill: $third_color;
+  &:hover,
+  &:focus {
+    background-color: $accent_color;
+    fill: $white_color;
+  }
+}

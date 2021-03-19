@@ -1,0 +1,31 @@
+.advantages-set {
+}
+.advantages__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.advantages__thumb {
+  margin-bottom: 30px;
+  padding: 25px 0;
+  background-color: $forth_color;
+  border-radius: 4px;
+}
+.advantages__icon {
+  margin: 0 auto;
+}
+.advantages__label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $second_color;
+}
