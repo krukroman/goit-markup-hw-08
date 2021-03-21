@@ -29,7 +29,12 @@
   }
 }
 .hero-container {
-  padding: 0 15px;
+  @media screen and (min-width: 452px) and (max-width: 479px) {
+    padding: 0 30px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding: 0 60px;
+  }
 }
 .section-hero__title {
   margin-bottom: 30px;

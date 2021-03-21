@@ -1,0 +1,20 @@
+.backdrop {
+  opacity: 1;
+  pointer-events: initial;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 93px 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity $cubic;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    &.modal-window {
+      opacity: 0;
+    }
+  }
+}

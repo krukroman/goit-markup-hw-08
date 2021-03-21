@@ -63,6 +63,79 @@
             </a>
           </li>
         </ul>
+        <button
+          class="mobile-menu-open-button"
+          type="button"
+          aria-label="Открыть мобильное меню"
+          aria-expanded="false"
+          data-mobile-menu-open
+        >
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu-backdrop" data-mobile-menu>
+        <aside class="mobile-menu">
+          <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu-navigation__list">
+              <li class="mobile-menu-navigation__item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu-navigation__link mobile-menu-navigation__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu-navigation__item">
+                <a href="./portfolio.html" class="mobile-menu-navigation__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu-navigation__item">
+                <a href="" class="mobile-menu-navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu-contacts__list">
+            <li class="mobile-menu-contacts__item">
+              <a href="tel:+380961111111" class="mobile-menu-contacts__link-tel"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu-contacts__link-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-socials__list">
+            <li class="mobile-menu-socials__item">
+              <a href="" class="mobile-menu-socials__link">Instagram</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a href="" class="mobile-menu-socials__link">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a href="" class="mobile-menu-socials__link">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a href="" class="mobile-menu-socials__link">LinkedIn</a>
+            </li>
+          </ul>
+          <button
+            class="mobile-menu-close-button"
+            type="button"
+            aria-label="Закрыть мобильное меню"
+            aria-expanded="false"
+            data-mobile-menu-close
+          >
+            <svg class="mobile-menu-close__icon" width="40" height="40">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </aside>
       </div>
     </header>
     <!-- Головне наповнення сторінки -->
@@ -73,7 +146,13 @@
           <h1 class="section-hero__title">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="main-button" type="button" data-modal-open>
+          <button
+            class="main-button"
+            type="button"
+            aria-label="Открыть модальное окно"
+            aria-expanded="false"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -144,7 +223,13 @@
               <div class="about-us__thumb">
                 <img
                   class="about-us__image"
-                  src="./images/index/what-we-do/what-we-do-1.jpg"
+                  srcset="
+                    ./images/index/what-we-do/projects-1-370.jpg   370w,
+                    ./images/index/what-we-do/projects-1-740.jpg   740w,
+                    ./images/index/what-we-do/projects-1-1110.jpg 1110w
+                  "
+                  sizes="33.33vw"
+                  src="./images/index/what-we-do/projects-1-370.jpg"
                   alt="Процесс написания кода"
                   width="370"
                   height="294"
@@ -156,7 +241,13 @@
               <div class="about-us__thumb">
                 <img
                   class="about-us__image"
-                  src="./images/index/what-we-do/what-we-do-2.jpg"
+                  srcset="
+                    ./images/index/what-we-do/projects-2-370.jpg   370w,
+                    ./images/index/what-we-do/projects-2-740.jpg   740w,
+                    ./images/index/what-we-do/projects-2-1110.jpg 1110w
+                  "
+                  sizes="33.33vw"
+                  src="./images/index/what-we-do/projects-2-370.jpg"
                   alt="Процесс работы с дизайном мобильного приложения"
                   width="370"
                   height="294"
@@ -168,7 +259,13 @@
               <div class="about-us__thumb">
                 <img
                   class="about-us__iamge"
-                  src="./images/index/what-we-do/what-we-do-3.jpg"
+                  srcset="
+                    ./images/index/what-we-do/projects-3-370.jpg   370w,
+                    ./images/index/what-we-do/projects-3-740.jpg   740w,
+                    ./images/index/what-we-do/projects-3-1110.jpg 1110w
+                  "
+                  sizes="33.33vw"
+                  src="./images/index/what-we-do/projects-3-370.jpg"
                   alt="Процесс работы с палитрой цветов на планшете"
                   width="370"
                   height="294"
@@ -188,17 +285,23 @@
             <li class="our-team__card">
               <img
                 class="our-team__image"
-                src="./images/index/team/ihor.jpg"
+                srcset="
+                  ./images/index/team/ihor-450.jpg   450w,
+                  ./images/index/team/ihor-900.jpg   900w,
+                  ./images/index/team/ihor-1350.jpg 1350w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                src="./images/index/team/ihor-450.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="our-team__label">
                 <h3 class="our-team__name">Игорь Демьяненко</h3>
                 <p class="our-team__job" lang="en">Product Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Instagram">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-instagram"
@@ -207,14 +310,14 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Twitter">
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Facebook">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-facebook"
@@ -223,7 +326,7 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="LinkedIn">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-linkedin"
@@ -237,17 +340,23 @@
             <li class="our-team__card">
               <img
                 class="our-team__image"
-                src="./images/index/team/olha.jpg"
+                srcset="
+                  ./images/index/team/olha-450.jpg   450w,
+                  ./images/index/team/olha-900.jpg   900w,
+                  ./images/index/team/olha-1350.jpg 1350w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                src="./images/index/team/olha-450.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="our-team__label">
                 <h3 class="our-team__name">Ольга Репина</h3>
                 <p class="our-team__job" lang="en">Frontend Developer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Instagram">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-instagram"
@@ -256,14 +365,14 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Twitter">
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Facebook">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-facebook"
@@ -272,7 +381,7 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="LinkedIn">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-linkedin"
@@ -286,17 +395,24 @@
             <li class="our-team__card">
               <img
                 class="our-team__image"
-                src="./images/index/team/mykola.jpg"
+                srcset="
+                  ./images/index/team/mykola-450.jpg   450w,
+                  ./images/index/team/mykola-900.jpg   900w,
+                  ./images/index/team/mykola-1350.jpg 1350w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                mykola
+                src="./images/index/team/mykola-450.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="our-team__label">
                 <h3 class="our-team__name">Николай Тарасов</h3>
                 <p class="our-team__job" lang="en">Marketing</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Instagram">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-instagram"
@@ -305,14 +421,14 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Twitter">
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Facebook">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-facebook"
@@ -321,7 +437,7 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="LinkedIn">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-linkedin"
@@ -335,17 +451,24 @@
             <li class="our-team__card">
               <img
                 class="our-team__image"
-                src="./images/index/team/mykhailo.jpg"
+                srcset="
+                  ./images/index/team/mykhailo-450.jpg   450w,
+                  ./images/index/team/mykhailo-900.jpg   900w,
+                  ./images/index/team/mykhailo-1350.jpg 1350w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                mykhailo
+                src="./images/index/team/mykhailo-450.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="our-team__label">
                 <h3 class="our-team__name">Михаил Ермаков</h3>
                 <p class="our-team__job" lang="en">UI Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Instagram">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-instagram"
@@ -354,14 +477,14 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Twitter">
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="Facebook">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-facebook"
@@ -370,7 +493,7 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link">
+                    <a href="" class="socials__link" aria-label="LinkedIn">
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/icons.svg#icon-linkedin"
@@ -390,42 +513,42 @@
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients-set">
             <li class="clients__item">
-              <a href="" class="clients__link">
+              <a href="" class="clients__link" aria-label="Имя компании">
                 <svg class="clients__logo" width="44" height="49">
                   <use href="./images/icons/icons.svg#icon-logo-1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="clients__link">
+              <a href="" class="clients__link" aria-label="Имя компании">
                 <svg class="clients__logo" width="50" height="52">
                   <use href="./images/icons/icons.svg#icon-logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="clients__link">
+              <a href="" class="clients__link" aria-label="Имя компании">
                 <svg class="clients__logo" width="41" height="43">
                   <use href="./images/icons/icons.svg#icon-logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="clients__link">
+              <a href="" class="clients__link" aria-label="Имя компании">
                 <svg class="clients__logo" width="80" height="42">
                   <use href="./images/icons/icons.svg#icon-logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="clients__link">
+              <a href="" class="clients__link" aria-label="Имя компании">
                 <svg class="clients__logo" width="59" height="47">
                   <use href="./images/icons/icons.svg#icon-logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="clients__link">
+              <a href="" class="clients__link" aria-label="Имя компании">
                 <svg class="clients__logo" width="89" height="45">
                   <use href="./images/icons/icons.svg#icon-logo-6"></use>
                 </svg>
@@ -467,28 +590,44 @@
           <b class="container__title">присоединяйтесь</b>
           <ul class="socials footer-socials">
             <li class="socials__item">
-              <a href="" class="socials__link footer-socials__link">
+              <a
+                href=""
+                class="socials__link footer-socials__link"
+                aria-label="Instagram"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="" class="socials__link footer-socials__link">
+              <a
+                href=""
+                class="socials__link footer-socials__link"
+                aria-label="Twitter"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="" class="socials__link footer-socials__link">
+              <a
+                href=""
+                class="socials__link footer-socials__link"
+                aria-label="Facebook"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="" class="socials__link footer-socials__link">
+              <a
+                href=""
+                class="socials__link footer-socials__link"
+                aria-label="LinkedIn"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -505,7 +644,11 @@
               name="email"
               placeholder="E-mail"
             />
-            <button type="submit" class="main-button footer-submit-button">
+            <button
+              type="submit"
+              class="main-button footer-submit-button"
+              aria-label="Отправить данные"
+            >
               Подписаться
               <svg class="footer-submit-button__icon" width="24" height="24">
                 <use href="./images/icons/icons.svg#icon-send"></use>
@@ -516,7 +659,7 @@
       </div>
     </footer>
     <!-- Бекдроп -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal-form" autocomplete="off">
           <b class="modal-form__title"
@@ -546,7 +689,7 @@
           <label class="modal-form__field modal-form__comment">
             <span class="modal-form__label">Коментарий</span>
             <textarea
-              class="modal-form__input modal-form__text-area"
+              class="modal-form__input modal-form__textarea"
               name="comment"
               placeholder="Введите текст"
             ></textarea>
@@ -566,17 +709,28 @@
               <a href="" class="agreement__link">Условия договора</a>
             </span>
           </label>
-          <button type="submit" class="main-button modal-submit-button">
+          <button
+            type="submit"
+            class="main-button modal-submit-button"
+            aria-label="Отправить данные"
+          >
             Отправить
           </button>
         </form>
-        <button class="close-button" type="button" data-modal-close>
+        <button
+          class="close-button"
+          type="button"
+          aria-label="Закрыть модальное окно"
+          aria-expanded="false"
+          data-modal-close
+        >
           <svg class="close-button__icon" width="18" height="18">
             <use href="./images/icons/icons.svg#icon-close"></use>
           </svg>
         </button>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

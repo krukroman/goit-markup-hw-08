@@ -29,14 +29,14 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation__item">
               <a
                 class="navigation__link navigation__link--current"
-                href="./portfolio.html"
-                >Портфолио</a
+                href="./index.html"
+                >Студия</a
               >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="">Контакты</a>
@@ -62,6 +62,79 @@
             </a>
           </li>
         </ul>
+        <button
+          class="mobile-menu-open-button"
+          type="button"
+          aria-label="Открыть мобильное меню"
+          aria-expanded="false"
+          data-mobile-menu-open
+        >
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu-backdrop" data-mobile-menu>
+        <aside class="mobile-menu">
+          <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu-navigation__list">
+              <li class="mobile-menu-navigation__item">
+                <a href="./index.html" class="mobile-menu-navigation__link"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu-navigation__item">
+                <a
+                  href="./portfolio.html"
+                  class="mobile-menu-navigation__link mobile-menu-navigation__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu-navigation__item">
+                <a href="" class="mobile-menu-navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu-contacts__list">
+            <li class="mobile-menu-contacts__item">
+              <a href="tel:+380961111111" class="mobile-menu-contacts__link-tel"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu-contacts__link-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-socials__list">
+            <li class="mobile-menu-socials__item">
+              <a href="" class="mobile-menu-socials__link">Instagram</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a href="" class="mobile-menu-socials__link">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a href="" class="mobile-menu-socials__link">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a href="" class="mobile-menu-socials__link">LinkedIn</a>
+            </li>
+          </ul>
+          <button
+            class="mobile-menu-close-button"
+            type="button"
+            aria-label="Закрыть мобильное меню"
+            aria-expanded="false"
+            data-mobile-menu-close
+          >
+            <svg class="mobile-menu-close__icon" width="40" height="40">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </aside>
       </div>
     </header>
     <!-- Головний контент сторінки Портфоліо -->
@@ -73,31 +146,67 @@
           <h2 class="visually-hidden">Фильтры</h2>
           <ul class="filter-set">
             <li class="filter-set__item">
-              <button type="button" class="filter-button">Все</button>
+              <button
+                type="button"
+                class="filter-button"
+                aria-label="Показать все продукты"
+              >
+                Все
+              </button>
             </li>
             <li class="filter-set__item">
-              <button type="button" class="filter-button">Веб-сайты</button>
+              <button
+                type="button"
+                class="filter-button"
+                aria-label="Показать только веб-сайты"
+              >
+                Веб-сайты
+              </button>
             </li>
             <li class="filter-set__item">
-              <button type="button" class="filter-button">Приложения</button>
+              <button
+                type="button"
+                class="filter-button"
+                aria-label="Показать только приложенияы"
+              >
+                Приложения
+              </button>
             </li>
             <li class="filter-set__item">
-              <button type="button" class="filter-button">Дизайн</button>
+              <button
+                type="button"
+                class="filter-button"
+                aria-label="Показать только категорию дизайн"
+              >
+                Дизайн
+              </button>
             </li>
             <li class="filter-set__item">
-              <button type="button" class="filter-button">Маркетинг</button>
+              <button
+                type="button"
+                class="filter-button"
+                aria-label="Показать только категорию маркетинг"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
           <h2 class="visually-hidden">Нашы продукты</h2>
           <ul class="products-set">
             <li class="products__card">
-              <a class="products__link" href="">
+              <a class="products__link" href="" aria-label="проэкт Технокряк">
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-1.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-1-450.jpg   450w,
+                      ./images/portfolio/products/product-1-900.jpg   900w,
+                      ./images/portfolio/products/product-1-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-1-450.jpg"
                     alt="Сайт на экране ноутбука"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -113,13 +222,19 @@
               </a>
             </li>
             <li class="products__card">
-              <a class="products__link" href="">
+              <a class="products__link" href="" aria-label="Постер">
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-2.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-2-450.jpg   450w,
+                      ./images/portfolio/products/product-2-900.jpg   900w,
+                      ./images/portfolio/products/product-2-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-2-450.jpg"
                     alt="Игра в баскетбол"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -137,13 +252,23 @@
               </a>
             </li>
             <li class="products__card">
-              <a class="products__link" href="">
+              <a
+                class="products__link"
+                href=""
+                aria-label="Сайт ресторана морской еды"
+              >
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-3.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-3-450.jpg   450w,
+                      ./images/portfolio/products/product-3-900.jpg   900w,
+                      ./images/portfolio/products/product-3-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-3-450.jpg"
                     alt="Логотип ресторана морской еды"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -159,13 +284,19 @@
               </a>
             </li>
             <li class="products__card">
-              <a class="products__link" href="">
+              <a class="products__link" href="" aria-label="Проект Прайм">
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-4.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-4-450.jpg   450w,
+                      ./images/portfolio/products/product-4-900.jpg   900w,
+                      ./images/portfolio/products/product-4-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-4-450.jpg"
                     alt="Чорные беспроводные наушники"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -181,13 +312,19 @@
               </a>
             </li>
             <li class="products__card">
-              <a class="products__link" href="">
+              <a class="products__link" href="" aria-label="Проект Боксес">
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-5.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-5-450.jpg   450w,
+                      ./images/portfolio/products/product-5-900.jpg   900w,
+                      ./images/portfolio/products/product-5-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-5-450.jpg"
                     alt="Большая белая коробка и маленькая коричневая коробка"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -203,13 +340,23 @@
               </a>
             </li>
             <li class="products__card">
-              <a class="products__link" href="">
+              <a
+                class="products__link"
+                href=""
+                aria-label="Сайт для вдохновления"
+              >
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-6.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-6-450.jpg   450w,
+                      ./images/portfolio/products/product-6-900.jpg   900w,
+                      ./images/portfolio/products/product-6-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-6-450.jpg"
                     alt="Сайт на экране монитора"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -225,13 +372,23 @@
               </a>
             </li>
             <li class="products__card">
-              <a class="products__link" href="">
+              <a
+                class="products__link"
+                href=""
+                aria-label="дизайн ограниченого издания"
+              >
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-7.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-7-450.jpg   450w,
+                      ./images/portfolio/products/product-7-900.jpg   900w,
+                      ./images/portfolio/products/product-7-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-7-450.jpg"
                     alt="Пример дизайна на развороте книги"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -247,13 +404,19 @@
               </a>
             </li>
             <li class="products__card">
-              <a class="products__link" href="">
+              <a class="products__link" href="" aria-label="проект лаборатория">
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-8.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-8-450.jpg   450w,
+                      ./images/portfolio/products/product-8-900.jpg   900w,
+                      ./images/portfolio/products/product-8-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-8-450.jpg"
                     alt="Бирка с названием"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -269,13 +432,23 @@
               </a>
             </li>
             <li class="products__card">
-              <a class="products__link" href="">
+              <a
+                class="products__link"
+                href=""
+                aria-label="приложение для развития бизнеса"
+              >
                 <div class="products__thumb">
                   <img
                     class="products__image"
-                    src="./images/portfolio/products/product-9.jpg"
+                    srcset="
+                      ./images/portfolio/products/product-9-450.jpg   450w,
+                      ./images/portfolio/products/product-9-900.jpg   900w,
+                      ./images/portfolio/products/product-9-1350.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+                    src="./images/portfolio/products/product-9-450.jpg"
                     alt="процес работы над дизайном на ноутбуке"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="products__overlay">
@@ -325,28 +498,44 @@
           <b class="container__title">присоединяйтесь</b>
           <ul class="socials footer-socials">
             <li class="socials__item">
-              <a href="" class="socials__link footer-socials__link">
+              <a
+                href=""
+                class="socials__link footer-socials__link"
+                aria-label="Instagram"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="" class="socials__link footer-socials__link">
+              <a
+                href=""
+                class="socials__link footer-socials__link"
+                aria-label="Twitter"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="" class="socials__link footer-socials__link">
+              <a
+                href=""
+                class="socials__link footer-socials__link"
+                aria-label="Facebook"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="" class="socials__link footer-socials__link">
+              <a
+                href=""
+                class="socials__link footer-socials__link"
+                aria-label="LinkedIn"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -363,7 +552,11 @@
               name="email"
               placeholder="E-mail"
             />
-            <button type="submit" class="main-button footer-submit-button">
+            <button
+              type="submit"
+              class="main-button footer-submit-button"
+              aria-label="Отправить данные"
+            >
               Подписаться
               <svg class="footer-submit-button__icon" width="24" height="24">
                 <use href="./images/icons/icons.svg#icon-send"></use>
@@ -373,5 +566,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
