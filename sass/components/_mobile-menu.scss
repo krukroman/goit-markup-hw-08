@@ -46,6 +46,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $first_color;
+  transition: color $cubic;
   &:hover,
   &:focus {
     color: $accent_color;

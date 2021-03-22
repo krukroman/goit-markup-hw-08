@@ -11,6 +11,7 @@
   padding: 12px;
   border-radius: 50%;
   fill: $third_color;
+  transition: fill $cubic, background-color $cubic;
   &:hover,
   &:focus {
     background-color: $accent_color;
