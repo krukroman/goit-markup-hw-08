@@ -9,10 +9,15 @@
     align-items: center;
     justify-content: center;
   }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
 }
 .footer-address-container {
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 1200px) {
+    margin: 0 70px 0 0;
   }
 }
 .footer-logo {
@@ -20,6 +25,12 @@
   padding: 0;
   text-align: center;
   color: $white_color;
+  & .logo--accented {
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .address {
   font-style: normal;
@@ -29,10 +40,16 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $white_color;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .address__item {
   &:not(&:last-child) {
     margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 .address__link {
@@ -43,6 +60,10 @@
   text-align: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    text-align: left;
   }
 }
 .container__title {
@@ -64,8 +85,17 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
   }
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 0 auto;
+    text-align: left;
+    width: 570px;
+  }
 }
 .footer-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .footer-form__input {
   margin-bottom: 20px;
@@ -82,11 +112,16 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 1200px) {
+    margin: 0 12px 0 0;
+    min-width: 0;
+    width: 100%;
+  }
 }
-.footer-submit-button {
+.main-button.footer-submit-button {
   display: flex;
   align-items: center;
-  padding: 10px 28px 10px 28px;
+  padding: 9px 28px;
 }
 .footer-submit-button__icon {
   margin-left: 10px;

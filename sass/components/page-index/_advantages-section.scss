@@ -1,3 +1,8 @@
+.advantages {
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 47px 0;
+  }
+}
 .advantages-set {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -13,6 +18,9 @@
   @media screen and (min-width: 768px) {
     margin: 15px;
     width: calc((768px - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((1200px - 8 * 15px) / 4);
   }
 }
 .advantages__thumb {

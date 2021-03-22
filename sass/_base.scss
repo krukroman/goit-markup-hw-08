@@ -55,6 +55,9 @@ svg {
 .section {
   margin: 0 auto;
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .container {
   margin: 0 auto;
@@ -75,4 +78,10 @@ svg {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
