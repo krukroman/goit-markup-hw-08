@@ -1,8 +1,18 @@
 .advantages-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
 }
 .advantages__item {
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((768px - 4 * 15px) / 2);
   }
 }
 .advantages__thumb {
@@ -22,6 +32,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .advantages__text {
   font-size: 14px;

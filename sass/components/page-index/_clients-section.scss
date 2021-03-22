@@ -22,6 +22,9 @@
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: calc((480px - 4 * 15px) / 2);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((768px - 6 * 15px) / 3);
+  }
 }
 .clients__logo {
   margin: 0 auto;
