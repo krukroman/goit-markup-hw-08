@@ -633,6 +633,7 @@ svg {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-hero {
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/tablet-bg-img-768.jpg);
   }
 }
@@ -649,6 +650,8 @@ svg {
 @media screen and (min-width: 1200px) {
   .section-hero {
     padding: 200px 0;
+    max-width: 1600px;
+    background-color: #c4c4c4;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/bg-img-1600.jpg);
   }
 }
