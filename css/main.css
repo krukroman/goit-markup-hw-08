@@ -457,13 +457,11 @@ svg {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
     flex-wrap: nowrap;
-    justify-content: flex-start;
   }
 }
 
@@ -525,7 +523,7 @@ svg {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-socials-container {
-    margin-left: 165px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -557,6 +555,7 @@ svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form-container {
     width: 450px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1122,6 +1121,7 @@ svg {
 
 .agreement__icon {
   border: 2px solid #212121;
+  border-radius: 2px;
   background-color: #fff;
   fill: transparent;
   transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

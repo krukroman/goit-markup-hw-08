@@ -7,11 +7,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    justify-content: flex-start;
   }
 }
 .footer-address-container {
@@ -59,7 +57,7 @@
   margin-bottom: 60px;
   text-align: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 165px;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     margin: 0;
@@ -84,6 +82,7 @@
   text-align: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
+    margin: 0 auto;
   }
   @media screen and (min-width: 1200px) {
     margin: 0 0 0 auto;
