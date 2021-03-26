@@ -12,7 +12,6 @@
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
-    margin: 0 auto;
     padding: 40px;
     width: 528px;
     height: 581px;
@@ -95,7 +94,7 @@
   border-radius: 2px;
   background-color: $white_color;
   fill: transparent;
-  transform: border-color $cubic, fill $cubic, background-color $cubic;
+  transition: border-color $cubic, fill $cubic, background-color $cubic;
   .agreement__checkbox:focus + & {
     outline: 1px solid $accent_color;
   }

@@ -284,7 +284,7 @@ svg {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: -1;
   height: 100vh;
   width: 100vw;
   opacity: 0;
@@ -296,6 +296,7 @@ svg {
 }
 .mobile-menu-backdrop.is-open {
   opacity: 1;
+  z-index: 2;
   pointer-events: initial;
   overflow: scroll;
 }
@@ -928,6 +929,7 @@ svg {
 .clients__link {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 90px;
   width: calc((100vw - 4 * 15px) / 2);
   border: 1px solid #afb1b8;
@@ -955,10 +957,6 @@ svg {
   }
 }
 
-.clients__logo {
-  margin: 0 auto;
-}
-
 .backdrop {
   opacity: 1;
   pointer-events: initial;
@@ -968,6 +966,7 @@ svg {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 2;
   padding: 93px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -985,6 +984,7 @@ svg {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  z-index: -1;
 }
 .backdrop.is-hidden.modal-window {
   opacity: 0;
@@ -1007,7 +1007,6 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    margin: 0 auto;
     padding: 40px;
     width: 528px;
     height: 581px;
@@ -1124,7 +1123,7 @@ svg {
   border-radius: 2px;
   background-color: #fff;
   fill: transparent;
-  transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agreement__checkbox:focus + .agreement__icon {
   outline: 1px solid #2196f3;
@@ -1281,13 +1280,16 @@ svg {
 
 .products__overlay {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
   top: 0;
   left: 0;
   opacity: 0;
   transform: translateY(100%);
   height: 100%;
   width: 100%;
-  padding: 4px;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.56;
@@ -1298,17 +1300,17 @@ svg {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .products__overlay {
-    padding: 77px 24px;
+    padding: 0 24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .products__overlay {
-    padding: 49px 24px;
+    padding: 0 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .products__overlay {
-    padding: 63px 24px;
+    padding: 0 24px;
   }
 }
 
