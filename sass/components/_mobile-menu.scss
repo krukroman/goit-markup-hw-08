@@ -96,7 +96,6 @@
 .mobile-menu-socials__item {
   position: relative;
   margin: 9px;
-  width: calc(100vw - 8 * 9px) / 4;
   &:not(&:last-child)::after {
     content: '';
     position: absolute;

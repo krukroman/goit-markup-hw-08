@@ -384,7 +384,6 @@ svg {
 .mobile-menu-socials__item {
   position: relative;
   margin: 9px;
-  width: calc(100vw - 8 * 9px)/4;
 }
 .mobile-menu-socials__item:not(.mobile-menu-socials__item:last-child)::after {
   content: "";
