@@ -284,7 +284,6 @@ svg {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
   height: 100vh;
   width: 100vw;
   opacity: 0;
@@ -296,7 +295,6 @@ svg {
 }
 .mobile-menu-backdrop.is-open {
   opacity: 1;
-  z-index: 2;
   pointer-events: initial;
   overflow: scroll;
 }
