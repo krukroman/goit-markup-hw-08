@@ -23,12 +23,12 @@
   padding: 0;
   text-align: center;
   color: $white_color;
-  & .logo--accented {
-    padding: 0;
-  }
   @media screen and (min-width: 1200px) {
     text-align: left;
   }
+}
+.footer-logo--accented {
+  padding: 0;
 }
 .address {
   font-style: normal;

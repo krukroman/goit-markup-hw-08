@@ -16,16 +16,15 @@
   border: transparent;
   background-color: $white_color;
   transition: fill $cubic;
-  &:hover,
-  &:focus {
-    .mobile-menu-open__icon {
-      fill: $accent_color;
-    }
-  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 .mobile-menu-open__icon {
   transition: fill $cubic;
+  .mobile-menu-open-button:hover &,
+  .mobile-menu-open-button:focus & {
+    fill: $accent_color;
+  }
 }

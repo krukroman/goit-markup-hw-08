@@ -32,12 +32,6 @@
 .modal-form__field {
   position: relative;
   margin-bottom: 10px;
-  &:hover .modal-form__icon {
-    fill: $accent_color;
-  }
-  &:hover .modal-form__input {
-    border-color: $accent_color;
-  }
 }
 .modal-form__label {
   margin-bottom: 4px;
@@ -53,11 +47,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color $cubic;
+  .modal-form__field:hover & {
+    border-color: $accent_color;
+  }
   &:focus {
     border-color: $accent_color;
-    & + .modal-form__icon {
-      fill: $accent_color;
-    }
   }
 }
 .modal-form__icon {
@@ -65,6 +59,12 @@
   top: 28px;
   left: 12px;
   transition: fill $cubic;
+  .modal-form__field:hover & {
+    fill: $accent_color;
+  }
+  .modal-form__input:focus + & {
+    fill: $accent_color;
+  }
 }
 .modal-form__textarea {
   resize: none;

@@ -28,10 +28,6 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-    & .products__overlay {
-      transform: translateY(0%);
-      opacity: 1;
-    }
   }
 }
 .products__thumb {
@@ -65,13 +61,12 @@
   color: $white_color;
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform $cubic, opacity $cubic;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    padding: 0 24px;
+  .products__link:hover &,
+  .products__link:focus & {
+    transform: translateY(0%);
+    opacity: 1;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 0 24px;
-  }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 480px) {
     padding: 0 24px;
   }
 }
