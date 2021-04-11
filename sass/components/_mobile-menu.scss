@@ -34,7 +34,7 @@
   margin-bottom: 302px;
 }
 .mobile-menu-navigation__item {
-  &:not(&:last-child) {
+  &:not(:last-child) {
     margin-bottom: 32px;
   }
 }
@@ -58,7 +58,7 @@
   margin-bottom: 64px;
 }
 .mobile-menu-contacts__item {
-  &:not(&:last-child) {
+  &:not(:last-child) {
     margin-bottom: 32px;
   }
 }
@@ -94,7 +94,7 @@
 .mobile-menu-socials__item {
   position: relative;
   margin: 9px;
-  &:not(&:last-child)::after {
+  &:not(:last-child)::after {
     content: '';
     position: absolute;
     top: 0;
