@@ -10,15 +10,15 @@
   }
 }
 .products__card {
-  &:not(&:last-child) {
+  &:not(:last-child) {
     margin-bottom: 10px;
   }
   @media screen and (min-width: 768px) {
     margin: 15px;
-    width: calc((768px - 4 * 15px) / 2);
+    flex-basis: calc((100% - 4 * 15px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((1200px - 6 * 15px) / 3);
+    flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
 .products__link {

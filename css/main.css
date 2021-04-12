@@ -1276,20 +1276,22 @@ svg {
   }
 }
 
-.products__card:not(.products__card:last-child) {
+.products__card:not(:last-child) {
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .products__card {
     margin: 15px;
-    width: calc((768px - 4 * 15px) / 2);
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .products__card {
-    width: calc((1200px - 6 * 15px) / 3);
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
 
