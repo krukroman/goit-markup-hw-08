@@ -30,7 +30,6 @@
   }
 }
 .modal-form__field {
-  position: relative;
   margin-bottom: 10px;
 }
 .modal-form__label {
@@ -40,6 +39,9 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: $second_color;
+}
+.input__wrapper {
+  position: relative;
 }
 .modal-form__input {
   min-width: 100%;
@@ -56,8 +58,9 @@
 }
 .modal-form__icon {
   position: absolute;
-  top: 28px;
+  top: 50%;
   left: 12px;
+  transform: translateY(-50%);
   transition: fill $cubic;
   .modal-form__field:hover & {
     fill: $accent_color;
