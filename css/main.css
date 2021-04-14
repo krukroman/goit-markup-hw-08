@@ -1027,6 +1027,7 @@ svg {
 }
 
 .input__wrapper {
+  display: block;
   position: relative;
 }
 
