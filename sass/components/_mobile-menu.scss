@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   pointer-events: none;
   margin: 0;
@@ -23,7 +23,14 @@
   position: relative;
   margin: 0;
   padding: 48px 15px;
+  opacity: 0;
   background-color: $white_color;
+  transform: translateX(100%);
+  transition: transform $cubic, opacity $cubic;
+  .mobile-menu-backdrop.is-open & {
+    transform: translateX(0%);
+    opacity: 1;
+  }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     margin: 0 auto;
     width: 480px;
