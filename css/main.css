@@ -1138,6 +1138,7 @@ svg {
 }
 
 .agreement__icon {
+  cursor: pointer;
   border: 2px solid #212121;
   border-radius: 2px;
   background-color: #fff;
