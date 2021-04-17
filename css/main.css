@@ -1432,6 +1432,9 @@ svg {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1439,6 +1442,9 @@ svg {
   .footer-container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1506,7 +1512,7 @@ svg {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-socials-container {
-    margin-left: auto;
+    margin-left: 165px;
   }
 }
 
