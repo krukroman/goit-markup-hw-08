@@ -8,7 +8,7 @@
   pointer-events: none;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $white_color;
   &.is-open {
     opacity: 1;
     pointer-events: initial;
@@ -24,11 +24,6 @@
   margin: 0;
   padding: 48px 15px;
   background-color: $white_color;
-  transform: translateX(100%);
-  .mobile-menu-backdrop.is-open & {
-    transform: translateX(0%);
-    transition: transform $cubic;
-  }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     margin: 0 auto;
     width: 480px;
