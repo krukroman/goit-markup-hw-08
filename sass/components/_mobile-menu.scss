@@ -8,12 +8,12 @@
   pointer-events: none;
   margin: 0;
   padding: 0;
-  background-color: $white_color;
-  transition: opacity $cubic;
+  background-color: rgba(0, 0, 0, 0.2);
   &.is-open {
     opacity: 1;
     pointer-events: initial;
     overflow: scroll;
+    transition: opacity $cubic;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -23,13 +23,11 @@
   position: relative;
   margin: 0;
   padding: 48px 15px;
-  opacity: 0;
   background-color: $white_color;
   transform: translateX(100%);
-  transition: transform $cubic, opacity $cubic;
   .mobile-menu-backdrop.is-open & {
     transform: translateX(0%);
-    opacity: 1;
+    transition: transform $cubic;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     margin: 0 auto;
